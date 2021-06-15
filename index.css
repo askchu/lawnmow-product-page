@@ -237,14 +237,15 @@ nav button:hover{
     'type3';
     gap: 20px;
     height: 100%;
-    padding: 30px 0;
+    padding: 30px 0 50px 0;
+    margin: 0 auto 20px auto;
     /* background: #eee; */
 }
 
 .services .name{
     text-align: center;
     grid-area: name;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .name h3{
     color: #4e9525;
@@ -300,6 +301,8 @@ nav button:hover{
     grid-template-columns: 1fr 1fr;
     color: #fff;
     width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
     height: 100%;
     padding: 20px 40px;
 }
@@ -308,6 +311,7 @@ nav button:hover{
 }
 .statement{
     margin-top: 40px;
+    margin-bottom: 30px;
 }
 .aboutUs h3{
     font-size: 1.2rem;
@@ -316,9 +320,12 @@ nav button:hover{
     margin-top: 15px;
 }
 .img1{
+    display: none;
     margin-top: 30px;
     width: 100%;
+    max-width: 300px;
     height: 100%;
+    margin: 0 auto;
 }
 .img1 img{
     width: 100%;
@@ -409,7 +416,7 @@ nav button:hover{
 }
 .price-cards{
     width: 80%;
-    margin: 20px auto 0 auto;
+    margin: 40px auto 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
@@ -472,6 +479,103 @@ nav button:hover{
     background-color: #84b634;
 }
 
+.contact-form{
+    width: 80%;
+    margin: 40px auto;
+}
+.contact-form .information{    
+    width: 90%;
+    margin: 0 auto 30px auto;
+}
+.contact-form .information > div{
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+.contact-form .information .img{
+    border: 1px solid #eee;
+    border-radius: 50%;
+    background: #eee;
+    color: #4e9525;
+    width: max-content;
+    margin: 10px auto;
+    font-size: 1.3rem;
+    padding: 15px;
+}
+.contact-form .image{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.contact-form .image img{
+    width: 100%;
+    height: 100%;
+}
+.contact-info{
+    height: max-content;
+    /* margin-bottom: 30px; */
+}
+.contact-form .contact-info form{
+    /* background: #eee; */
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 15px;
+    padding: 20px;
+    height: max-content;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 4px #eee;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info form > div{
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.contact-info .title{
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.contact-info .title h2{
+    color: #4e9525;
+}
+.contact-form form label{
+    width: 10%;
+    padding: 0 5px;
+}
+.contact-info form input{
+    width: 90%;
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.contact-info form textarea{
+    width: 90%;
+    margin: 0 auto;
+    height: 200px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.contact-info form button{
+    width: 50%;
+    max-width: 100px;
+    padding: 10px 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    background-color: #4e9525;
+    color: #fff;
+}
+.contact-info form button:hover{
+    cursor: pointer;
+}
+
+
+
 @media (min-width: 750px){
  
     nav .links {
@@ -532,9 +636,7 @@ nav button:hover{
     'type1 type2 type3';
     /* gap: 20px; */
     height: 100%;
-    padding: 30px 0;
     width: 80%;
-    margin: 0 auto;
     /* background: #eee; */
     }
     
@@ -543,7 +645,7 @@ nav button:hover{
         width: 100%;
         height: 100%;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 15% 10% 10% 50%;
+        grid-template-rows: 10% 10% 10% 50%;
         grid-template-areas:
         'statement mission'
         'none purpose'
@@ -571,8 +673,19 @@ nav button:hover{
     .purpose{
         grid-area: purpose;
     }
+    .aboutUs h2{
+        font-size: 1.5rem;
+    }
+    .aboutUs h3{
+        font-size: 1.3rem;
+    }
+    .aboutUs p{
+        font-size: 1.2rem;
+    }
     .aboutUs .img1{
+        display: block;
         grid-area: img1;
+        max-width: 400px;
         margin-top: 0;
     }
     .aboutUs .img2{
@@ -590,20 +703,73 @@ nav button:hover{
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
     }
-   
+    .contact-form{
+        width: 100%;
+    }
+    .contact-form .information{
+        display: flex;
+        justify-content: space-evenly;
+        width: 80%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .contact-form .information > div {
+        margin-right: 10px;
+        width: 50%;
+        margin: 0 auto 30px auto;
+    }
+    .contact-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+        height: 100%;
+        border: 5px solid #eee;
+        border-radius: 10px;
+    }
+    .contact-form .contact-info form{
+        border: none;
+        box-shadow: none;
+    }
+    .contact-info .image{
+        display: block;
+        height: 100%;
+        width: 100%;
+        border-left: 5px solid #eee;
+    }
+    .contact-info .image img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }  
 }
 
-@media (min-width: 1050px){
+@media (min-width: 1175px){
     .logo{
         width: 80%;
         margin: 20px auto;
     }
-    .services{
-        padding-bottom: 50px;
-    }
     .aboutUs{
-        width: 65%;
+        width: 75%;
+        max-width: 1100px;
         margin: 0 auto;
+    }
+    .aboutUs h2{
+        font-size: 2rem;
+    }
+    .aboutUs h3{
+        font-size: 1.8rem;
+    }
+    .aboutUs p{
+        font-size: 1.3rem;
+    }
+    .aboutUs .img1{
+        max-width: 600px;
+    }
+    .services{
+        max-width: 900px;
     }
     .pricing{
         padding-bottom: 50px;
