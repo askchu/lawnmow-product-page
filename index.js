@@ -21,6 +21,8 @@ const pricing1 = document.querySelector('#pricing1');
 const pricing2 = document.querySelector('#pricing2');
 const contact1 = document.querySelector('#contact1');
 const contact2 = document.querySelector('#contact2');
+const quote1 = document.querySelector('#quote1');
+const quote2 = document.querySelector('#quote2');
 
 const serviceContent = document.querySelector('#serviceContent')
 const aboutContent = document.querySelector('#aboutContent')
@@ -84,6 +86,15 @@ contact1.addEventListener('click', () => {
     window.scroll(0, contactCord);
 })
 contact2.addEventListener('click', () => {
+    const contactCord = contactForm.getBoundingClientRect().top - 135 + window.pageYOffset;
+    window.scroll(0, contactCord);
+    dropdown.classList.toggle('open');
+})
+quote1.addEventListener('click', () => {
+    const contactCord = contactForm.getBoundingClientRect().top - 120 + window.pageYOffset;
+    window.scroll(0, contactCord);
+})
+quote2.addEventListener('click', () => {
     const contactCord = contactForm.getBoundingClientRect().top - 135 + window.pageYOffset;
     window.scroll(0, contactCord);
     dropdown.classList.toggle('open');
