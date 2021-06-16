@@ -751,7 +751,7 @@ footer{
         justify-content: space-evenly;
         width: 80%;
         max-width: 900px;
-        padding-top: 20px;
+        padding: 20px 0;
         margin: 0 auto;
     }
     .contact-form .information > div {
