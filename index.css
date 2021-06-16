@@ -101,6 +101,9 @@ nav {
     padding: 10px;
     border-radius: 50%;
 }
+.social-media ul li:hover{
+    cursor: pointer;
+}
 .searchbar{
     display: none;
 }
